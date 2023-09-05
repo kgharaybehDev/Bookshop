@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { book } from '../book.model';
 
 @Component({
   selector: 'app-book-list',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class BookListComponent {
 
+  books = [
+    new book('book1', 'book1 description', 'https://picsum.photos/200/300'),
+  ]
 }
